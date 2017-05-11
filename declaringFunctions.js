@@ -1,4 +1,3 @@
-
 function getRandomValue() {
   var min = 1;
   var max = 6;
@@ -11,10 +10,9 @@ function NumberOfRolls(number) {
   var results = [];
   for (var i = 0; i < number; i++) {
     results.push(getRandomValue());
-  } //for bracket
+  }
 
-console.log("Rolled " + number + " dice:" + results.toString());
-} //function bracket 
-
+  console.log("Rolled " + number + " dice:" + results.toString());
+}
 
 NumberOfRolls(process.argv[2]);
